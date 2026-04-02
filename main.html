@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZMD抽卡模擬器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="main-container">
+    <div class="cost-badge" id="costBadge">目前花費：0</div>
+    <button class="reset-btn" onclick="resetTracking()">重置花費與紀錄</button>
+
+    <div class="sidebar" id="sidebar"></div>
+
+    <div class="content-area">
+        <div class="character-visual" id="characterVisual">
+            <img id="characterImage" class="character-image" alt="抽到的幹員立繪" hidden>
+            <div class="character-strip" id="characterStrip" hidden></div>
+            <div class="character-placeholder" id="characterPlaceholder">CHARACTER VISUAL</div>
+            <div class="character-caption" id="characterCaption"></div>
+        </div>
+    </div>
+
+    <div class="info-panel" id="infoPanel">
+        <div class="info-title" id="infoTitle"></div>
+        <div class="info-subtitle" id="infoSubtitle"></div>
+        <div class="dummy-text" id="infoText"></div>
+        <div class="pity-indicator" id="pityIndicator"></div>
+    </div>
+
+    <div class="history-box" id="history">
+        <div class="sixstar-stats" id="sixStarStats"></div>
+        <div class="history-list" id="historyList">
+            <div style="color: #666;">近期抽取紀錄...</div>
+        </div>
+    </div>
+
+    <div class="draw-controls">
+        <div class="draw-btn-row">
+            <button class="draw-btn" onclick="gacha(1)">
+                <span>尋訪一次</span>
+                <span class="btn-sub">x500</span>
+            </button>
+            <button class="draw-btn ten-draw" onclick="gacha(10)">
+                <span>尋訪十次</span>
+                <span class="btn-sub">x5000</span>
+            </button>
+        </div>
+        <label class="skip-toggle" for="skipLeverToggle">
+            <input type="checkbox" id="skipLeverToggle">
+            <span>跳過動畫</span>
+        </label>
+    </div>
+</div>
+
+<div id="pull-overlay">
+    <div class="pull-panel">
+        <div class="system-text">CAUTION<br>ONE TIME ONLY</div>
+        <div class="lever-container">
+            <div class="lever-track"></div>
+            <div id="lever" class="lever-handle"></div>
+        </div>
+        <div class="pull-hint">向下拖動以開啟尋訪</div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

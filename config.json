@@ -1,0 +1,123 @@
+{
+	"commonUnits": {
+		"6": ["艾爾戴拉", "俊衛", "別禮", "餘燼", "黎風"],
+		"5": ["佩麗卡", "弧光", "艾維文娜", "大潘", "陳千語", "狼衛", "賽希", "晝雪", "阿列什"],
+		"4": ["秋栗", "卡契爾", "埃特拉", "螢石", "安塔爾"]
+	},
+	"unitImages": {
+        "秋栗": "https://patchwiki.biligame.com/images/zmd/3/34/ei71tt30whm9bdvht9jnezwgm31oju6.png",
+        "卡契爾": "https://patchwiki.biligame.com/images/zmd/4/46/iu9pn2jasoeb75ru0u2y3m45o4ju3rb.png",
+        "埃特拉": "https://patchwiki.biligame.com/images/zmd/d/d8/27zgky5gzgd8h3mtxto9zevkzpipyu3.png",
+        "螢石": "https://patchwiki.biligame.com/images/zmd/3/3b/dt5eb74hmpii4o8pklq341quheiiq0j.png",
+        "安塔爾": "https://patchwiki.biligame.com/images/zmd/a/a2/pxtwh3rbwz6f5wl9iwxhzd6xh3l7mmb.png",
+        "佩麗卡": "https://patchwiki.biligame.com/images/zmd/8/88/5bh5tuwy2oloxisg1jg9ezzfe9foupm.png",
+        "弧光": "https://patchwiki.biligame.com/images/zmd/2/2d/r0giq825xkxjdt11aiquh97muytm4kc.png",
+        "艾維文娜": "https://patchwiki.biligame.com/images/zmd/e/ee/loxtv8kxlkbxbw9s9s1uany6nbgvz1g.png",
+        "大潘": "https://patchwiki.biligame.com/images/zmd/f/fb/tgbqgeybikct1o79sbtgojy73n47ku2.png",
+        "陳千語": "https://patchwiki.biligame.com/images/zmd/0/0a/7oc2v8kqfgzaltfwm42og404l57kha4.png",
+        "狼衛": "https://patchwiki.biligame.com/images/zmd/5/58/00lnamykwvtlsocgqt5aviju51wz1kp.png",
+        "賽希": "https://patchwiki.biligame.com/images/zmd/0/0e/34s7b2cdxfts8o3mxcg5j4r2nijqtmg.png",
+        "晝雪": "https://patchwiki.biligame.com/images/zmd/8/89/bilf7bvb0hgcrb69pm71c4jg1mmw7u8.png",
+        "阿列什": "https://patchwiki.biligame.com/images/zmd/6/6a/ghpzulbxkn3ti4w1ohmqnb5yaszgqk7.png",
+        "艾爾戴拉": "https://patchwiki.biligame.com/images/zmd/4/44/eu4b8cro6olz1661ukgxo9hsyzi4vd9.png",
+        "俊衛": "https://patchwiki.biligame.com/images/zmd/4/4f/ao4yyo3hgngno7pfnrpizgre18genzx.png",
+        "別禮": "https://patchwiki.biligame.com/images/zmd/8/89/pbn6j6vda7dxfsw24znbtquobklnhdr.png",
+        "餘燼": "https://patchwiki.biligame.com/images/zmd/4/4f/opip8l1ltjgwul2ixz6s4eaihiwzs9k.png",
+        "黎風": "https://patchwiki.biligame.com/images/zmd/5/5d/7flbuypbon8y8m55euyppps60t74ws3.png",
+        "萊萬汀": "https://patchwiki.biligame.com/images/zmd/c/c8/1h12ht6qwxevwplur66rdpi74pnexms.png",
+        "潔爾佩塔": "https://patchwiki.biligame.com/images/zmd/8/8d/ad5b7sxqzxsfl94loxahx0neic4em7b.png",
+        "伊馮": "https://patchwiki.biligame.com/images/zmd/3/31/3oun3hly1hoqb8w1w034ut6gzwllgx3.png",
+		"湯湯": "https://patchwiki.biligame.com/images/zmd/thumb/b/bf/edk65gcbjqwwe1z6lnkbtexx9oao96x.png/1200px-%E6%B1%A4%E6%B1%A4%E7%AB%8B%E7%BB%98.png"
+	},
+	"pools": [
+		{
+			"key": "wolf",
+			"tabLabel": "狼珀",
+			"title": "狼珀",
+			"subtitle": "洛西 獲得機率提升",
+			"subtitleColor": "#ff1744",
+			"panelGradient": "linear-gradient(to right, rgba(255, 59, 48, 0.24) 0%, rgba(255, 23, 68, 0.58) 100%)",
+			"featured6": "洛西",
+			"infoHtml": "結束於 04/17 <br><br>",
+			"extraUnits": {
+				"6": ["洛西", "湯湯", "伊馮"]
+			}
+		},
+        {
+            "key": "river",
+			"tabLabel": "河流的女兒",
+			"title": "河流的女兒",
+			"subtitle": "湯湯 獲得機率提升",
+			"subtitleColor": "#2aa7ff",
+			"panelGradient": "linear-gradient(to right, rgba(46, 134, 222, 0.24) 0%, rgba(32, 91, 190, 0.58) 100%)",
+			"featured6": "湯湯",
+			"infoHtml": "結束於 03/29 <br><br>",
+			"extraUnits": {
+				"6": ["湯湯", "伊馮", "潔爾佩塔"]
+			}
+        },
+        {
+            "key": "color",
+			"tabLabel": "熱烈色彩",
+			"title": "熱烈色彩",
+			"subtitle": "伊馮 獲得機率提升",
+			"subtitleColor": "#ff86c8",
+			"panelGradient": "linear-gradient(to right, rgba(255, 181, 218, 0.22) 0%, rgba(255, 134, 200, 0.58) 100%)",
+			"featured6": "伊馮",
+			"infoHtml": "結束於 03/29 <br><br>",
+			"extraUnits": {
+				"6": ["伊馮", "潔爾佩塔", "萊萬汀"]
+			}
+        },
+        {
+            "key": "letter",
+            "tabLabel": "輕飄飄的信使",
+			"title": "輕飄飄的信使",
+			"subtitle": "潔爾佩塔 獲得機率提升",
+			"subtitleColor": "#ff5f2e",
+			"panelGradient": "linear-gradient(to right, rgba(255, 115, 52, 0.24) 0%, rgba(255, 58, 38, 0.62) 100%)",
+			"featured6": "潔爾佩塔",
+			"infoHtml": "結束於 02/24 <br><br>",
+			"extraUnits": {
+				"6": ["伊馮", "潔爾佩塔", "萊萬汀"]
+			}
+        },
+        {
+            "key": "fire",
+            "tabLabel": "融火灼痕",
+			"title": "融火灼痕",
+			"subtitle": "萊萬汀 獲得機率提升",
+			"subtitleColor": "#ff7a7a",
+			"panelGradient": "linear-gradient(to right, rgba(255, 122, 122, 0.22) 0%, rgba(255, 94, 94, 0.58) 100%)",
+			"featured6": "萊萬汀",
+			"infoHtml": "結束於 02/07 <br><br>",
+			"extraUnits": {
+				"6": ["伊馮", "潔爾佩塔", "萊萬汀"]
+			}
+        },
+		{
+			"key": "standard",
+			"tabLabel": "常駐",
+			"title": "基礎尋訪",
+			"subtitle": "永久開放",
+			"subtitleColor": "#fbff00",
+			"panelGradient": "linear-gradient(to right, rgba(254, 221, 0, 0.22) 0%, rgba(254, 221, 0, 0.62) 100%)",
+			"featured6": null,
+			"infoHtml": "<br><br>"
+		}
+	],
+	"unitImageFocus": {
+		"埃特拉": "53% 22%",
+		"秋栗": "60% 22%",
+		"卡契爾": "38% 22%",
+        "安塔爾": "58% 22%",
+        "賽希": "48% 22%",
+        "晝雪": "48% 22%",
+        "艾維文娜" : "53% 22%",
+        "阿列什": "48% 22%",
+        "佩麗卡": "54% 22%",
+        "俊衛": "47% 22%",
+        "潔爾佩塔": "46% 22%",
+        "萊萬汀": "47% 22%"
+	}
+}
