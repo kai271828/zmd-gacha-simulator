@@ -536,6 +536,12 @@ function shouldSkipLever() {
     return Boolean(toggle && toggle.checked);
 }
 
+function getPointerClientY(event) {
+    if (event.touches && event.touches[0]) return event.touches[0].clientY;
+    if (event.changedTouches && event.changedTouches[0]) return event.changedTouches[0].clientY;
+    return event.clientY;
+}
+
 function gacha(times) {
     pendingDraws = times;
     const overlay = document.getElementById('pull-overlay');
@@ -711,16 +717,14 @@ function setupLeverControls() {
     let isDragging = false;
     let startY = 0;
 
-    lever.addEventListener('mousedown', (e) => {
+    const startDrag = (clientY) => {
         isDragging = true;
-        startY = e.clientY;
+        startY = clientY;
         clearLeverGlow();
-    });
+    };
 
-    window.addEventListener('mousemove', (e) => {
-        if (!isDragging) return;
-
-        const deltaY = e.clientY - startY;
+    const moveDrag = (clientY) => {
+        const deltaY = clientY - startY;
         const move = computeLeverTravel(deltaY, maxTravel);
         lever.style.top = `${move}px`;
         updateLeverGlowByProgress(move / maxTravel, pendingHighestStar);
@@ -729,9 +733,9 @@ function setupLeverControls() {
             isDragging = false;
             executeDraw();
         }
-    });
+    };
 
-    window.addEventListener('mouseup', () => {
+    const endDrag = () => {
         if (!isDragging) return;
         isDragging = false;
         clearLeverGlow();
@@ -740,7 +744,31 @@ function setupLeverControls() {
         setTimeout(() => {
             lever.style.transition = 'none';
         }, 300);
+    };
+
+    lever.addEventListener('mousedown', (e) => {
+        startDrag(e.clientY);
     });
+
+    lever.addEventListener('touchstart', (e) => {
+        startDrag(getPointerClientY(e));
+        e.preventDefault();
+    }, { passive: false });
+
+    window.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        moveDrag(e.clientY);
+    });
+
+    window.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        moveDrag(getPointerClientY(e));
+        e.preventDefault();
+    }, { passive: false });
+
+    window.addEventListener('mouseup', endDrag);
+    window.addEventListener('touchend', endDrag);
+    window.addEventListener('touchcancel', endDrag);
 }
 
 async function initApp() {

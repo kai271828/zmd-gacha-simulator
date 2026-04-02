@@ -637,3 +637,118 @@ body, html {
         right: 12px;
     }
 }
+
+@media (max-width: 768px) {
+    .main-container {
+        display: block;
+    }
+
+    .sidebar {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        right: 8px;
+        width: auto;
+        min-height: 56px;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 6px;
+        padding: 6px;
+        border-right: none;
+        border-bottom: 1px solid #444;
+        z-index: 9;
+        backdrop-filter: blur(3px);
+    }
+
+    .pool-tab {
+        flex: 0 0 auto;
+        min-width: 84px;
+        min-height: 42px;
+    }
+
+    .content-area {
+        height: 100vh;
+    }
+
+    .info-panel {
+        position: absolute;
+        top: 74px;
+        right: 0;
+        width: min(54vw, 220px);
+        height: calc(100vh - 74px);
+        padding: 10px 10px 80px;
+        box-sizing: border-box;
+        z-index: 5;
+    }
+
+    .info-title {
+        font-size: clamp(1.35rem, 6vw, 1.9rem);
+        margin-bottom: 2px;
+    }
+
+    .info-subtitle {
+        margin-bottom: 10px;
+        font-size: 0.85rem;
+    }
+
+    .dummy-text {
+        font-size: 0.78rem;
+        line-height: 1.45;
+    }
+
+    .pity-indicator {
+        font-size: 0.86rem;
+        line-height: 1.42;
+    }
+
+    .history-box {
+        left: 8px;
+        bottom: 82px;
+        width: min(46vw, 220px);
+        height: 150px;
+        z-index: 8;
+    }
+
+    .cost-badge {
+        top: 8px;
+        right: 8px;
+        max-width: min(66vw, 280px);
+        font-size: 0.74rem;
+        z-index: 10;
+    }
+
+    .reset-btn {
+        top: 56px;
+        right: 8px;
+        font-size: 0.74rem;
+        padding: 5px 9px;
+        z-index: 10;
+    }
+
+    .draw-controls {
+        right: 8px;
+        bottom: 8px;
+        gap: 6px;
+        z-index: 10;
+    }
+
+    .draw-btn-row {
+        gap: 8px;
+    }
+
+    .draw-btn {
+        min-width: 98px;
+        font-size: 1rem;
+        padding: 8px 14px;
+    }
+
+    .btn-sub {
+        font-size: 0.64rem;
+    }
+
+    .skip-toggle {
+        font-size: 0.72rem;
+        padding: 3px 8px;
+    }
+}
