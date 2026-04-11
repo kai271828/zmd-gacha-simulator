@@ -27,20 +27,23 @@
         "萊萬汀": "https://patchwiki.biligame.com/images/zmd/c/c8/1h12ht6qwxevwplur66rdpi74pnexms.png",
         "潔爾佩塔": "https://patchwiki.biligame.com/images/zmd/8/8d/ad5b7sxqzxsfl94loxahx0neic4em7b.png",
         "伊馮": "https://patchwiki.biligame.com/images/zmd/3/31/3oun3hly1hoqb8w1w034ut6gzwllgx3.png",
-		"湯湯": "https://patchwiki.biligame.com/images/zmd/thumb/b/bf/edk65gcbjqwwe1z6lnkbtexx9oao96x.png/1200px-%E6%B1%A4%E6%B1%A4%E7%AB%8B%E7%BB%98.png"
+		"湯湯": "https://patchwiki.biligame.com/images/zmd/thumb/b/bf/edk65gcbjqwwe1z6lnkbtexx9oao96x.png/1200px-%E6%B1%A4%E6%B1%A4%E7%AB%8B%E7%BB%98.png",
+		"洛西": "https://zh.moegirl.org.cn/zh-hk/%E6%B4%9B%E8%8C%9C",
+		"庄方宜": "https://zh.moegirl.org.cn/zh-hk/%E5%BA%84%E6%96%B9%E5%AE%9C"
+
 	},
 	"pools": [
 		{
 			"key": "temp",
 			"tabLabel": "武陵",
 			"title": "武陵",
-			"subtitle": "庄芳宜 獲得機率提升",
-			"subtitleColor": "#ff1744",
+			"subtitle": "庄方宜 獲得機率提升",
+			"subtitleColor": "#2e7d32",
 			"panelGradient": "linear-gradient(to right, rgba(124, 179, 66, 0.24) 0%, rgba(46, 125, 50, 0.58) 100%)",
-			"featured6": "庄芳宜",
+			"featured6": "庄方宜",
 			"infoHtml": "結束於 04/17 <br><br>",
 			"extraUnits": {
-				"6": ["庄芳宜", "洛西", "湯湯"]
+				"6": ["庄方宜", "洛西", "湯湯"]
 			}
 		},
 		{
