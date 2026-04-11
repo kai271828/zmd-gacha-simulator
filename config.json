@@ -31,6 +31,19 @@
 	},
 	"pools": [
 		{
+			"key": "temp",
+			"tabLabel": "武陵",
+			"title": "武陵",
+			"subtitle": "庄芳宜 獲得機率提升",
+			"subtitleColor": "#ff1744",
+			"panelGradient": "linear-gradient(to right, rgba(124, 179, 66, 0.24) 0%, rgba(46, 125, 50, 0.58) 100%)",
+			"featured6": "庄芳宜",
+			"infoHtml": "結束於 04/17 <br><br>",
+			"extraUnits": {
+				"6": ["庄芳宜", "洛西", "湯湯"]
+			}
+		},
+		{
 			"key": "wolf",
 			"tabLabel": "狼珀",
 			"title": "狼珀",
