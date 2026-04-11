@@ -34,9 +34,9 @@
 	},
 	"pools": [
 		{
-			"key": "temp",
-			"tabLabel": "武陵",
-			"title": "武陵",
+			"key": "spring",
+			"tabLabel": "春雷動萬物生",
+			"title": "春雷動萬物生",
 			"subtitle": "庄方宜 獲得機率提升",
 			"subtitleColor": "#2e7d32",
 			"panelGradient": "linear-gradient(to right, rgba(124, 179, 66, 0.24) 0%, rgba(46, 125, 50, 0.58) 100%)",
